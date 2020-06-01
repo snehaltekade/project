@@ -1,0 +1,98 @@
+@import './../../src/scss/main.scss';
+.container{
+    position: absolute;
+    top: 10%;
+    z-index: 12;
+}
+.main-container{
+    display: flex;
+}
+.design-image{
+    width:100%;
+    @include flex-center;
+    flex-direction: column;
+}
+.example-img{
+    width:25%;
+    padding: 3% 0;
+}
+.introduction{
+    width:50%;
+    box-shadow: 3px 0 $whitesmoke;
+}
+.profile{
+@include flex-center ;
+flex-direction: column;
+
+}
+
+.intro-text{
+    width: 60%;
+    margin-bottom:1%;
+    color:$black;
+    text-align: justify;
+    font-size: 1.2rem;
+    font-family: serif,Arial, Helvetica, sans-serif;
+}
+.profile-pic{
+    width: 25%;
+    border-radius: 50%;
+    margin: 9% 0 2% 0;
+}
+
+.social-media{
+width:50%;
+@include flex-center-end;
+}
+.media-icon{
+    display:flex;
+}
+.follow-label{
+    @include text-content;
+    text-align: center;
+}
+.facebook{
+    color:$darkblue;  
+}
+.twitter{
+    color:$corneflowerblue;
+}
+.instagram{
+    color: $deeppink;
+}
+.list-style{
+    list-style-type: none;
+    margin:0 5%;
+}
+
+// @media only screen and (max-width: 414px) {
+//     .intro-text{
+//       width:70%;
+//     }
+//   }
+
+//   @media only screen and (max-width: 768px,) {
+    
+//     .intro-text{
+//       width:70%;
+//     }
+//   }
+
+  @media only screen and (max-width: 1024px) {
+    .container{
+        top: 8%;
+    }
+    .intro-text{
+      width:70%;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .container{
+        top: 5%;
+       
+    }
+    .intro-text{
+      width:70%;
+    }
+  }
